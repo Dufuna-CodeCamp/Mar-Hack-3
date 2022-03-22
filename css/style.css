@@ -1,3 +1,13 @@
+li{
+    margin-left:60px;
+}
+p{
+    margin-left:50px;
+    margin-right:50px;
+}
+h1,h2,h3,h4{
+    text-align: center;
+}
 body{
     font-size: 16px;
 	font-style: normal;
@@ -118,6 +128,8 @@ body{
     flex: 0 0 32.433333%;
     margin: 5px;
     height: 550px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .career-item .career-title{
@@ -125,12 +137,14 @@ body{
     font-weight: 700;
     padding-bottom: 10px;
 }
+
 .career-item img{
     height: auto;
     width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 
@@ -153,8 +167,6 @@ body{
     flex: 0 0 30%;
 }
 */
-
-
 
 
 footer{
