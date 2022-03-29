@@ -10,21 +10,19 @@ body{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-    height: 100px;
-	list-style: 100px;
+    height: 70px;
+	list-style: none;
     background: #EAA43B;
     
 }
 
 .header button{
-    background: white;
-    
+    background-color: #8ac3ee;
     border: 1px solid #5CCEE7;
     box-sizing: border-box;
-    border-radius: 50px;
+    border-radius: 5px;
     height: 25px;
     font-size: 18px;
-    font-weight:200;
 }
 
 .header button:hover{
@@ -39,21 +37,43 @@ body{
     text-decoration: none;
 }
 
-.header #search-btn{
-    margin-right: 20px;
+.header input[type=search]{
+    height: 25px;
 }
+
+.header #search-btn{
+    border-radius: 1px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+span a{
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+    transition: ease-in-out 0.2s;
+
+}
+    span a:hover{
+        font-weight: 700;
+        color: green;
+    }
+
 .navigation{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 40px;
-    line-height: 40px;
+	height: 30px;
+    line-height: 30px;
 	background: rgba(100, 63, 178, 0.9);
 }
 
 .navigation a{
     color:#EAA43B;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration:none;
 
 }
@@ -74,6 +94,7 @@ body{
     width: 100%;
     margin: 0 auto;
 }
+
 .cover h3{
     font-size: 3em;
     position: absolute;
@@ -90,24 +111,37 @@ body{
 }
 
 /*overview*/
+.overview{
+    display: flex;
+    flex-direction: column;
+}
+
 .overview .heading{
+
+    margin: 50px;
     text-align: center;
-    font-size:30px;
-    font-weight:500;
+    font-size:15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-/*.overview .overview-content{
 
+.overview p{
+
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 }
 
-*/
 
-/*careers*/
 
-.careers .heading{
+/*========= careers section=========*/
+
+/*.careers .heading{
     text-align: center;
     font-size: 60px;
 }
+*/
 
 .careers-content{
     display: flex;
@@ -115,9 +149,22 @@ body{
 }
 
 .careers-content .career-item{
-    flex: 0 0 32.433333%;
-    margin: 5px;
+    flex: 0 0 32.43333%;
+    margin: 3px;
+    padding-top: 5px;
     height: 550px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+    transition: ease-in-out 0.5s;
+}
+
+.careers-content .career-item:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 2px 5px lightslategray;
+    box-shadow: 2px 2px 3px grey;
+    background-color: aliceblue;
+    border-radius: 2px;
 }
 
 .career-item .career-title{
@@ -125,57 +172,68 @@ body{
     font-weight: 700;
     padding-bottom: 10px;
 }
+
 .career-item img{
     height: auto;
     width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
+.career-item p{
+    margin-left:60px;
+    margin-right:60px;
+}
 
-/*
-.featured-listings a{
-    float: right;
+.career-item a{
     text-decoration: none;
     color: black;
 }
 
-.featured-content{
-    display: flex;
-    flex-wrap: wrap;
+.career-item a:visited{
+    color: black;
 }
 
-.featured-content .item{
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid royalblue;
-    flex: 0 0 30%;
+.path-description{
+    padding-left: 200px;
+    padding-right: 200px;
 }
-*/
 
 
+    h1, h2, h3, h4, i{
+        text-align: center;
+    }
+
+
+  .courses-skills h4{
+
+        margin-left:60px;
+        margin-right:60px;
+        text-align: left;
+    }
+
+    .Careers h4,  .faq h4, .sub-head{
+        text-align: left;
+    
+    }
+    .content .image{
+        margin-left: 100px;
+    }
 
 
 footer{
     display:flex;
-    margin-top: 20px;
-    padding-top: 20px;
     flex-direction:column;
 	align-items: center;
     background: #EAA43B;   
 }
 
-footer .logo{
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
-}
 
 .logo a{
     text-decoration: none;
     color: black;
-
 }
 
 footer .useful-links{
@@ -188,5 +246,9 @@ footer .useful-links{
     margin: 20px;
     text-decoration: none;
     color: black;
+    transition: ease-in-out 0.2s;
+}
 
+.useful-links a:hover{
+    color:green;
 }

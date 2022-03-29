@@ -1,0 +1,126 @@
+main {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.login-form{
+    padding-top: 20px;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.colm-intro {
+    flex: 0 0 45%;
+    text-align: left;
+}
+
+.colm-form {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+
+.colm-intro p {
+    font-style: italic;
+    font: 20px;
+    font-weight: 300;
+    padding: 0 20px;
+    line-height: 20px;
+}
+
+.colm-form .form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.colm-form .form-container input,.colm-form .form-container select,.colm-form .form-container .btn-login,  .form-container .btn-submit{
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.colm-form .form-container input, select{
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    outline: none;
+}
+
+.colm-form .form-container input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.colm-form .form-container .btn-login, .form-container .btn-submit {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.colm-form .form-container a {
+    display: block;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #dadde1;
+    cursor: pointer;
+}
+
+.colm-form .form-container a:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.colm-form .form-container .sign-up-btn {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 750;
+    margin-top: 20px; 
+}
+
+.colm-form .form-container .sign-up-btn:hover{
+    color: black;
+    text-decoration: none;
+
+}
+.colm-form p {
+    font-size: 14px;
+}
+
+.colm-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+.colm-form p a:hover {
+    text-decoration: underline;
+}
